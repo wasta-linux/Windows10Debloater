@@ -122,6 +122,7 @@ $global:WhiteListedApps = @(
     "MIDIBerry"                                 # Issue 68
     "Slack"                                     # Issue 83
     "Microsoft.MixedReality.Portal"             # Issue 195
+    "Microsoft.Services.Store.Engagement"       # problems removing - was a non-removable in earlier versions, but obviously no longer.
     "Microsoft.SkypeApp"                        # Wasta-approved
     "Microsoft.VCLibs.140.00"                   # Wasta-approved
     "Microsoft.VCLibs.140.00.UWPDesktop"        # Wasta-approved
@@ -180,7 +181,6 @@ if ($NonRemovables -eq $null ) {
         "windows.immersivecontrolpanel"
         "Windows.PrintDialog"
         "Microsoft.VCLibs.140.00"
-        "Microsoft.Services.Store.Engagement"
         "Microsoft.UI.Xaml.2.0"
     )
 }
