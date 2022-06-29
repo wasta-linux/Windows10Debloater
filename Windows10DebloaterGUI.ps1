@@ -541,7 +541,7 @@ $CustomizeBlacklist.Add_Click( {
 
                 '$global:WhiteListedApps = @(' | Out-File -FilePath $PSScriptRoot\custom-lists.ps1 -Encoding utf8
                 @($ListPanel.controls) | ForEach {
-                    if ($_ -is [System.Windows.Forms.CheckBox] -and $_.Enabled -and !$_.Checked) {
+                    if ($_ -is [System.Windows.Forms.CheckBox] -and $_.AutoCheck -and !$_.Checked) {
                         "    ""$( $_.Text )""" | Out-File -FilePath $PSScriptRoot\custom-lists.ps1 -Append -Encoding utf8
                     }
                 }
@@ -549,7 +549,7 @@ $CustomizeBlacklist.Add_Click( {
 
                 '$global:Bloatware = @(' | Out-File -FilePath $PSScriptRoot\custom-lists.ps1 -Append -Encoding utf8
                 @($ListPanel.controls) | ForEach {
-                    if ($_ -is [System.Windows.Forms.CheckBox] -and $_.Enabled -and $_.Checked) {
+                    if ($_ -is [System.Windows.Forms.CheckBox] -and $_.AutoCheck -and $_.Checked) {
                         "    ""$($_.Text)""" | Out-File -FilePath $PSScriptRoot\custom-lists.ps1 -Append -Encoding utf8
                     }
                 }
