@@ -59,7 +59,6 @@ $global:Bloatware = @(
     "Microsoft.People"
     "Microsoft.Print3D"
     "Microsoft.RemoteDesktop"                           # Issue 120
-    "Microsoft.SkypeApp"
     "Microsoft.Office.Todo.List"                        # Issue 77
     "Microsoft.Whiteboard"                              # Issue 77
     "Microsoft.WindowsAlarms"
