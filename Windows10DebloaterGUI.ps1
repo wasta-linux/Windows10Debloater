@@ -123,6 +123,10 @@ $global:WhiteListedApps = @(
     "MIDIBerry"                                 # Issue 68
     "Slack"                                     # Issue 83
     "Microsoft.MixedReality.Portal"             # Issue 195
+    "Microsoft.SkypeApp"                        # Wasta-approved
+    "Microsoft.VCLibs.140.00"                   # Wasta-approved
+    "Microsoft.VCLibs.140.00.UWPDesktop"        # Wasta-approved
+    "Microsoft.UI.Xaml.2.0"                     # Wasta-approved
     "Microsoft.Paint"                           # new in Windows 11
     "Microsoft.WindowsNotepad"                  # new in Windows 11
     "Microsoft.WindowsTerminal"                 # new in Windows 11
