@@ -130,7 +130,6 @@ $global:WhiteListedApps = @(
     "WindSynthBerry"                            # Issue 68
     "MIDIBerry"                                 # Issue 68
     "Slack"                                     # Issue 83
-    "*Nvidia*"                                  # Issue 198
     "Microsoft.MixedReality.Portal"             # Issue 195
     "Microsoft.Paint"                           # new in Windows 11
     "Microsoft.WindowsNotepad"                  # new in Windows 11
