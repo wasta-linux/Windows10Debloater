@@ -43,7 +43,6 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 
 #Unnecessary Windows 10 AppX apps that will be removed by the blacklist.
 $global:Bloatware = @(
-    "Microsoft.PPIProjection"
     "Microsoft.BingNews"
     "Microsoft.GetHelp"
     "Microsoft.Getstarted"
@@ -61,7 +60,6 @@ $global:Bloatware = @(
     "Microsoft.Print3D"
     "Microsoft.RemoteDesktop"                           # Issue 120
     "Microsoft.SkypeApp"
-    "Microsoft.StorePurchaseApp"
     "Microsoft.Office.Todo.List"                        # Issue 77
     "Microsoft.Whiteboard"                              # Issue 77
     "Microsoft.WindowsAlarms"
@@ -69,12 +67,6 @@ $global:Bloatware = @(
     "Microsoft.WindowsFeedbackHub"
     "Microsoft.WindowsMaps"
     "Microsoft.WindowsSoundRecorder"
-    "Microsoft.Xbox.TCUI"
-    "Microsoft.XboxApp"
-    "Microsoft.XboxGameOverlay"
-    "Microsoft.XboxGamingOverlay"
-    "Microsoft.XboxIdentityProvider"
-    "Microsoft.XboxSpeechToTextOverlay"
     "Microsoft.ZuneMusic"
     "Microsoft.ZuneVideo"
 
