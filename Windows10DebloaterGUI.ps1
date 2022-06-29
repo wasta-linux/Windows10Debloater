@@ -677,6 +677,8 @@ $RemoveBlacklistedBloatware.Add_Click( {
             Get-AppxProvisionedPackage -Online | Where-Object DisplayName -cmatch $global:BloatwareRegex | Remove-AppxProvisionedPackage -Online
             Write-Host "...and the final cleanup..."
             Get-AppxPackage -AllUsers | Where-Object Name -cmatch $global:BloatwareRegex | Remove-AppxPackage
+            # Inconsistent results on whether the above works or not. So try a second time to remove as -AllUsers
+            Get-AppxPackage -AllUsers | Where-Object Name -cmatch $global:BloatwareRegex | Remove-AppxPackage -AllUsers
         }
         Write-Host "`n`n`n`n`n`n`n`n`n`n`n`n`n`n`n`n`nRemoving blocklisted Bloatware.`n"
         DebloatBlacklist
